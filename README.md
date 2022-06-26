@@ -20,6 +20,34 @@ To run this project, you will need to add the following environment variables to
 
 `API_AUTH_KEY`: `Needs to be generated in Google Cloud Console`
 
+
+## Project Images
+`Playlist View 1`
+
+<img src="resources/images/Playlist-View1.png" height="300">
+
+`Playlist View 2`
+
+<img src="resources/images/Playlist-View2.png" height="300">
+
+`Playlist View 3`
+
+<img src="resources/images/Playlist-View3.png" height="300">
+
+`Playlist View 4`
+
+<img src="resources/images/Playlist-View4.png" height="300">
+
+`Video in Popup 1`
+
+<img src="resources/images/Video-Popup1.png" height="300">
+
+`Video in Popup 1`
+
+<img src="resources/images/Video-Popup2.png" height="300">
+
+
+
 ## Authors
 
 - [@ikiranshrestha](https://github.com/ikiranshrestha)
