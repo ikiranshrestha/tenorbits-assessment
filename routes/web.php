@@ -15,9 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/get', [YtPlaylistController::class, 'fetchPlaylists']);
 Route::get('/', [HomePageController::class, 'home']);

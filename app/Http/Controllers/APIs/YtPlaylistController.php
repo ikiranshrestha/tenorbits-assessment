@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 
 class YtPlaylistController extends Controller
 {
-    public function fetchPlaylists()
+    public static function fetchPlaylists()
     {
         $baseUrl = env('API_BASE_URL');
         $playlistId = env('PLAYLIST_ID');
