@@ -42,7 +42,7 @@ To run this project, you will need to add the following environment variables to
 
 <img src="resources/images/Video-Popup1.png" height="300">
 
-`Video in Popup 1`
+`Video in Popup 2`
 
 <img src="resources/images/Video-Popup2.png" height="300">
 

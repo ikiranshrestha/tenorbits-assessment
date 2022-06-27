@@ -29,20 +29,23 @@ class YtPlaylistController extends Controller
         $publishedAt = [];
         $description = [];
         $thumbnail = [];
-        $channelName = $response['items'][0]['snippet']['channelTitle'];
-        $channelId = $response['items'][0]['snippet']['channelId'];
+        $channelName = [];
+        $channelId = [];
 
         if($response->status() == 200){
             $response = $response->json();
-            // $countt = count($response);
+            $items = $response['items'];
+            $channelName = $items[0]['snippet']['channelTitle'];
+            $channelId = $items[0]['snippet']['channelId'];
+
             $c = 0;
             while($c < count($response['items'])){
-                $title[] = $response['items'][$c]['snippet']['title'];
-                $videoId[] = $response['items'][$c]['snippet']['resourceId']['videoId'];
-                $publishedAt[] = substr($response['items'][$c]['snippet']['publishedAt'], 0, 10);
-                $thumbnaill = $response['items'][$c]['snippet']['thumbnails']['high']['url'];
+                $title[] = $items[$c]['snippet']['title'];
+                $videoId[] = $items[$c]['snippet']['resourceId']['videoId'];
+                $publishedAt[] = substr($items[$c]['snippet']['publishedAt'], 0, 10);
+                $thumbnaill = $items[$c]['snippet']['thumbnails']['high']['url'];
                 $thumbnail[] = $thumbnaill;
-                $description[] = mb_strimwidth($response['items'][$c]['snippet']['description'], 0, 200, '...');
+                $description[] = mb_strimwidth($items[$c]['snippet']['description'], 0, 200, '...');
                 $c++;
             }
 
